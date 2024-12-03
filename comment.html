@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Add Your comment</h1>
+    <div id="parent">
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda voluptates eius, tempora quidem doloremque numquam. Odit veniam maxime fugit ipsum? Officia eos nihil aliquid? Ex similique provident maiores eligendi exercitationem, dolore soluta animi recusandae rerum a laudantium ipsam aliquam debitis eos, iusto excepturi dolor ipsa ut tempore maxime nostrum voluptatem nesciunt amet. Quibusdam velit temporibus repudiandae inventore dolorem, cupiditate debitis quos eaque a soluta quis nisi distinctio ex accusamus accusantium modi maxime repellat perferendis suscipit iste praesentium sit at! Rerum, hic sint sunt officiis atque libero minima culpa est nesciunt earum voluptate rem cum tenetur praesentium at commodi, perferendis architecto.</p>
+    </div>
+    <div>
+       
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda voluptates eius, tempora quidem doloremque numquam. Odit veniam maxime fugit ipsum? Officia eos nihil aliquid? Ex similique provident maiores eligendi exercitationem, dolore soluta animi recusandae rerum a laudantium ipsam aliquam debitis eos, iusto excepturi dolor ipsa ut tempore maxime nostrum voluptatem nesciunt amet. Quibusdam velit temporibus repudiandae inventore dolorem, cupiditate debitis quos eaque a soluta quis nisi distinctio ex accusamus accusantium modi maxime repellat perferendis suscipit iste praesentium sit at! Rerum, hic sint sunt officiis atque libero minima culpa est nesciunt earum voluptate rem cum tenetur praesentium at commodi, perferendis architecto.</p>
+    </div>
+
+  <div>
+    <textarea name="" id="new-comment" cols="100" rows="8" placeholder="Enter your comment"></textarea>
+    <br>
+    <button id="add-comment">Add comment</button>
+  </div>
+</section>
+
+<script>
+
+document.getElementById('add-comment').addEventListener('click',function(){
+   const textInput = document.getElementById('new-comment');
+   const text = textInput.value
+   const p = document.createElement('p');
+   p.innerText = text;
+   const div = document.getElementById('parent');
+   div.appendChild(p)
+
+   //clear the form//
+   textInput.value = ''
+
+   
+})
+
+</script>
+</body>
+</html>
